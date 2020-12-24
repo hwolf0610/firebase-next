@@ -25,6 +25,7 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
+fir-next-68bc3-firebase-adminsdk-ykjr2-f616c548f6.json
 .env.local
 .env.development.local
 .env.test.local

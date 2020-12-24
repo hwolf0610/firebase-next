@@ -13,9 +13,7 @@ export default class NewTab extends React.Component {
                 </Head>
     
                 <main className={styles.main}>
-                    <h1 className={styles.title}>
-                        Welcome to <a href="https://nextjs.org">Next.js!</a>
-                    </h1>
+                    
                     <Link href="/">
                         <a>Home</a>
                     </Link>
@@ -41,7 +39,7 @@ export async function getServerSideProps(context) {
     const json = await res.json()
     console.log("getServerSideProps", json)
    
-    
+
     return {
         props: { stars: json.stargazers_count }
     }
