@@ -1,11 +1,12 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Firebase Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -13,6 +14,11 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <Link href="/newTab">
+               <a>NewTab</a>
+            </Link>
+         <img src="./favicon.ico" alt="TutorialsPoint Logo" />
+
 
         <p className={styles.description}>
           Get started by editing{' '}
