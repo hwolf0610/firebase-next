@@ -18,7 +18,7 @@ class Dashboard extends React.Component {
     async componentDidMount() {
         var tutorialsRef = await firebase.database().ref("/tutorials");
         var tutorials = [];
-        await tutorialsRef.on('value', function (snapshot) {
+        await tutorialsRef.once('value', function (snapshot) {
             console.log('snapchat : ', snapshot)
             snapshot.forEach(function (childSnapshot) {
 
