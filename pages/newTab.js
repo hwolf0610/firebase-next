@@ -41,6 +41,7 @@ export async function getServerSideProps(context) {
     const json = await res.json()
     console.log("getServerSideProps", json)
    
+    
     return {
         props: { stars: json.stargazers_count }
     }
